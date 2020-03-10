@@ -47,12 +47,6 @@
 <p>mood =  1.75 +  0.18 * sleep +  0.03 * rumination stress+  0.07  * anticipatory stress
 <h4>Conclusion and Improvement</h4>
 <p>As we can see from the the result of one of our user (<strong>user_id=2666</strong>) , their rating for mood (<font color=#1B813E>green lines</font color=#1B813E>) and sleep quality (<font color=#DDD23B>yellow lines</font color=#DDD23B>) tend to move in the same direction, and their rating for rumination stress (<font color=#CB1B45>red lines</font color=#CB1B45>) and anticipatory stress(<font color=#113285>blue lines</font color=#113285>) seems not so related to the previous two metrics. </p>
-<p><strong>What are 2-3 additional pieces of information that would be important to collect?</strong>
-<ol>
-<li>As mentioned above, collect all the four metrics user data within the same day, and keep tracking for more consecutive days. Thus, we can do regression on each user to explore more on the relationship between the four metrics of that specified user.
-<li>If we want to see whether the therapy is making a difference, the date of each user receiving his/her therapy should be included. Thus, we can split user data by 'before therapy', 'after therapy' to prepare for an A/B testing.
-<li>If possible, we can also collect data of which mental health provider does each user go to. Thus, we can do a recommendation on mental health provider choice to the patients.
-</ol>
 <p>Intuitively, we would say that this user's moods are affected by his/her sleeping quality, rumination stress level and anticipatory stress level. 
 <ul>
     <li><strong>Sleeping quality:</strong> positively related to their mood, sometimes will affect their mood in the future.</li>
@@ -60,3 +54,9 @@
     <li><strong>Anticipatory stress:</strong> slightly positively related to their mood.</li>
 </ul>
 <p>Idealy, if we can collect all the four metrics user data within the same day, and keep tracking for more consecutive days, we can do regression on mood and other metrics. 
+<p><strong>What are 2-3 additional pieces of information that would be important to collect?</strong>
+<ol>
+<li>As mentioned above, collect all the four metrics user data within the same day, and keep tracking for more consecutive days. Thus, we can do regression on each user to explore more on the relationship between the four metrics of that specified user.
+<li>If we want to see whether the therapy is making a difference, the date of each user receiving his/her therapy should be included. Thus, we can split user data by 'before therapy', 'after therapy' to prepare for an A/B testing.
+<li>If possible, we can also collect data of which mental health provider does each user go to. Thus, we can do a recommendation on mental health provider choice to the patients.
+</ol>
